@@ -1,0 +1,2 @@
+# RetailGazeDataset
+Retail Gaze, a dataset for gaze estimation in real-world retail environments. Retail Gaze is composed of 3,922 images of individuals looking at products in a retail environment, with 12 camera capture angles.  Each image captures the third-person view of the customer and shelves. Location of the gaze point, the Bounding box of the person's head, segmentation masks of the gazed at product areas are provided as annotations. 
