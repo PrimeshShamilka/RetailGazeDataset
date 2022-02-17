@@ -1,0 +1,28 @@
+RetailGaze consists of 2728 images of the train set, 609 images of the test set, and 585 images of the validation set with 70%, 15%, and 15% as split ratios.
+You can download the RetailGaze dataset from the following links:
+
+Google Drive link: https://drive.google.com/file/d/1ZwbloTNhQHX6A_hxAdGHN2Y7iwjcq91x/view?usp=sharing
+Kaggle link: https://www.kaggle.com/dulanim/retailgaze
+
+The main directory for the images is RetailGaze_V2. The pickle files are,
+RetailGaze_V3_2.pickle - The complete annotation set
+RetailGaze_V3_2_train.pickle - used for training
+RetailGaze_V3_2_test.pickle - used for testing
+RetailGaze_V3_2_valid.pickle - used for validation
+
+The contents of the pickle file are a list of dictionary objects with lenght equal to the total number of images. Each object contains the following data:
+
+object = {
+	'filename': "the filename tree of this image",
+	'width': "640width",
+	'height': "480height",
+	'gaze_cx': "This is the specific point gx in the image that is considered the gazepoint",
+	'gaze_cy': "This is the specific point gy in the image that is considered the gazepoint",
+	'ann': {
+		'hbox': "Bounding box of the head of the person in the image. In [xmin, ymin, xmax, ymax] format."
+	},
+	'seg_mask': 'the ground truth segmentation mask tree of the gazed at product area'
+}
+
+
+NOTE: gaze_cx, gaze_yx, hbox all are in the scale of 640x480.
